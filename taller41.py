@@ -1,14 +1,17 @@
-def factorial(n):
-    if n==0:
-        return 1
-    else:
-        return n*factorial(n-1)
+def factorial(x):
+    contador=1
+    for i in range(0,x):
+        contador=contador*(x-i)
+    resultado = contador
+    return resultado
 
 def permutacion(n,r):
     perm=factorial(n)/factorial(n-r)
-    
+    return perm
+
 def combinacion(n,r):
     comb=factorial(n)/(factorial(r)*factorial(n-r))
+    return comb
     
 def teoremamultiplic(Lista,cant):
     cont=1
@@ -69,4 +72,3 @@ elif ejercicio == 6:
     cant=7
     c = teoremamultiplic(Lista,cant)
     print(c)
-    
