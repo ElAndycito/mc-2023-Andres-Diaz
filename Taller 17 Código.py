@@ -1,6 +1,6 @@
 import numpy as np
 import sympy as sp
-
+from math import e
 
 def RelLin(Lista1,Lista2):
   # Datos
@@ -38,9 +38,9 @@ def RelNoLin(Lista1,Lista2):
 
   m = (n*sum_xy - sum_x*sum_y) / (n*sum_x2 - sum_x**2)
   b = (sum_y - m*sum_x) / n
-
+  c = e**(m)
   # Print
-  print("La ecuación de la recta es y = {:.6f}x + {:.6f}".format(m, b))
+  print("La ecuación de la exponencial es y = {:.6f}e^{:.6f}x".format(c, m))
 
 
 def Listln(Lista):
