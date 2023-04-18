@@ -295,5 +295,18 @@ elif opc == 2:
     Crecimiento(Lista1,Lista2)  
   else:
     print("No existe la opción")
+elif opc == 3:
+  cant = int(input("Ingresa la cantidad de datos a ingresar en x: "))
+  Lista1 = []
+  Lista2 = []
+  print("Ingresa todos los datos para las x: ")
+  for i in range(cant):
+    num = float(input(": "))
+    Lista1.append(num)
+  print("Ingresa todos los datos para las y: ")
+  for i in range(cant):
+    num = float(input(": "))
+    Lista2.append(num)
+  estadist(Lista1,Lista2)
 else:
   print("No existe el ejercicio")
